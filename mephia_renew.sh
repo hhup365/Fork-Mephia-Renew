@@ -54,6 +54,7 @@ RESPONSE=$(curl -s -w "\n%{http_code}" $PROXY \
       \"name\": \"renew\",
       \"type\": 1,
       \"options\": [],
+      \"integration_type\": 0,
       \"attachments\": []
     }
   }")
@@ -98,4 +99,3 @@ if [[ "$RESULT" == ✅* ]]; then
 else
   exit 1
 fi
-aca23c61cfaefddf41b91ef0e2f53d03
